@@ -1,0 +1,256 @@
+﻿@model eshop.Models.Category
+
+@{
+    ViewBag.Title = @Model.Name;
+}
+
+<div class="container">
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                @if (Model.Name == "Food")
+                {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/1">Food</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/1">Food</a>
+                    </li>
+                }
+                @if (Model.Name == "Beauty")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/2">Beauty</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/2">Beauty</a>
+                    </li>
+                }
+                @if (Model.Name == "Bone Health")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/3">Bone Health</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/3">Bone Health</a>
+                    </li>
+                }
+                @if (Model.Name == "Brain Health")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/4">Brain Health</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/4">Brain Health</a>
+                    </li>
+                }
+                @if (Model.Name == "Children's Health")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/5">Children's Health</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/5">Children's Health</a>
+                    </li>
+                }
+                @if (Model.Name == "Energy")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/6">Energy</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/6">Energy</a>
+                    </li>
+                }
+                @if (Model.Name == "Eyes and Vision")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/7">Eyes and Vision</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/7">Eyes and Vision</a>
+                    </li>
+                }
+                @if (Model.Name == "Fish and Omega Oils")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/8">Fish and Omega Oils</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/8">Fish and Omega Oils</a>
+                    </li>
+                }
+                @if (Model.Name == "Heart and Circulation")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/9">Heart and Circulation</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/9">Heart and Circulation</a>
+                    </li>
+                }
+                @if (Model.Name == "Homoeopathy")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/10">Homoeopathy</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/10">Homoeopathy</a>
+                    </li>
+                }
+                @if (Model.Name == "Joint Support")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/11">Joint Support</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/11">Joint Support</a>
+                    </li>
+                }
+                @if (Model.Name == "Men's Health")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/12">Men's Health</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/12">Men's Health</a>
+                    </li>
+                }
+                @if (Model.Name == "Women's Health")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/13">Women's Health</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/13">Women's Health</a>
+                    </li>
+                }
+                @if (Model.Name == "Skincare")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/14">Skincare</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/14">Skincare</a>
+                    </li>
+                }
+                @if (Model.Name == "Sports")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/15">Sports</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/15">Sports</a>
+                    </li>
+                }
+                @if (Model.Name == "Weight Management")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/16">Weight Management</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/16">Weight Management</a>
+                    </li>
+                }
+                @if (Model.Name == "Oral Care")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/17">Oral Care</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/17">Oral Care</a>
+                    </li>
+                }
+                @if (Model.Name == "Organic Products")
+            {
+                    <li class="active">
+                        <a href="~/StoreFront/Index/18">Organic Products</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="~/StoreFront/Index/18">Organic Products</a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-9 portfolio-item">
+            <div class="row">
+                @foreach (var product in Model.Products)
+            {
+                    <div class="col-xs-12 col-md-3">
+                        <div class="thumbnail">
+                            <a href="~/Products/Details/@(product.Id)"><img class="img-responsive" src="~/Images/Products/@(product.Id).jpg" style="text-align:center"></a>
+                            <div class="caption text-center">
+                                <p>
+                                    <b>Name:</b> <span>@product.Name</span>
+                                </p>
+                                <p>
+                                    <b>Price:</b> <span>@product.Price NZD</span>
+                                </p>
+                                <p class="text-center">
+                                    @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = product.Id }, new { @class = "btn btn-info" })
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
