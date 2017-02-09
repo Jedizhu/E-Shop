@@ -1,66 +1,40 @@
-﻿@model eshop.Models.Product
+@model eshop.Models.Product
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Product Details";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShortDescription)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShortDescription)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.LastUpdated)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LastUpdated)
-        </dd>
-
-    </dl>
+<div class="container">
+    <div class="row">
+        <div id="portfolio-information" class="padding-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="~/Images/products/@(Model.Id).jpg" class="img-responsive" style="width:100%;" alt="">
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="project-name overflow">
+                            <h2 class="bold">@Html.DisplayFor(model => model.Name)</h2>
+                            <ul class="nav navbar-nav navbar-default">
+                                <li><a href="#"><i class="fa fa-tag"></i>@Html.DisplayFor(model => model.ShortDescription)</a></li>
+                            </ul>
+                        </div>
+                        <div class="project-info overflow">
+                            <h3>Product Info</h3>
+                            <p>@Html.Raw(Model.Description)</p>
+                        </div>
+                        <div class="price">
+                            <span class="text">Price:</span>
+                            <span class="price-new">@Html.DisplayFor(model => model.Price)</span>
+                        </div>
+                        <div class="live-preview">
+                            @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = Model.Id }, new { @class = "btn btn-info" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
